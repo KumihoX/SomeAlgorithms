@@ -1,0 +1,54 @@
+body {
+    font-size: 30px;
+}
+ 
+p {
+    color:#db7093;
+}
+
+.button {
+    color:black;
+    background-color:white;
+    border: 2px solid #db7093;
+    font-size: 16px;
+    padding: 10px 100px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:#db7093;
+    color:white;
+}
+
+.bg {
+    animation:slide 8s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, pink 50%, white 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:9s;
+}
+  
+.bg3 {
+    animation-duration:10s;
+}
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}

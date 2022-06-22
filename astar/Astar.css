@@ -1,0 +1,161 @@
+
+body {
+    min-height: 569px;
+    flex-direction: row;
+}
+
+h2 {
+    color:#ac516f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+.table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: auto ;
+    margin-bottom: 160px;
+}
+
+th, td {
+    padding: 10px 10px;
+    border: 1px solid #db7093;
+
+}
+
+.bg {
+    animation:slide 8s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, pink 50%, white 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+  
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:9s;
+}
+  
+.bg3 {
+    animation-duration:10s;
+}
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+
+.back {
+    padding: 17px 30px;
+    cursor: pointer;
+    background-position-y: bottom;
+    border: 3px;
+    border-color: #db7093 ;
+    border-style: groove;
+    background-repeat: no-repeat;
+}
+
+.back:hover {
+    background: url(point2.png);
+    background-size: 90%;
+    padding: 17px 35px;
+    cursor: pointer;
+    background-position-y: bottom;
+    border: 0px;
+    background-repeat: no-repeat;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.butt {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color:black;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid pink;
+    padding: 5px 30px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.butt:hover{
+    background-color:#db7093;
+    color:white;
+}
+
+.walkable {
+    background-color: #eccad6ab;
+}
+
+.walkable:hover {
+    background-color: rgb(181, 180, 180);
+    cursor: pointer;
+}
+
+.walkable:active {
+    background-color: rgb(89, 89, 89);
+    cursor: pointer;
+}
+
+.unwalkable {
+    background-color: black;
+}
+
+.unwalkable:hover {
+    background-color: rgb(181, 180, 180);
+    cursor: pointer;
+}
+
+.unwalkable:active {
+    background-color: rgb(89, 89, 89);
+    cursor: pointer;
+}
+
+.startik {
+    background-color: #db5454;
+}
+
+.startik:hover {
+    background-color: rgb(163, 34, 34);
+    cursor: pointer;
+}
+
+.startik:active {
+    background-color: rgb(89, 89, 89);
+    cursor: pointer;
+}
+
+.finishik {
+    background-color: #44c74b;
+}
+
+.finishik:hover {
+    background-color: rgb(24, 108, 24);
+    cursor: pointer;
+}
+
+.finishik:active {
+    background-color: rgb(89, 89, 89);
+    cursor: pointer;
+}
+
+.path {
+    background-color: #de507f;
+}
+
+.open {
+    background-color: #e097af;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' media='screen' href='cluster_page.css'>
+        <title>Алгоритм Кластеризации</title>
+    </head>
+    <div class="content">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="inner_1">
+            <div>
+                <h1>Алгоритм Кластеризации</h1>
+            </div>
+            <div>
+                <a href="../main_page.html"><button class="butt">Меню</button></a>
+                <button id="reset" class = "butt">Обновить поле</button>
+                <button id="start" class = "butt">Запустить алгоритм</button>
+            </div>
+            <br>
+            <div class="inner_2">
+                <div class="canvas-container">
+                    <canvas id ='canvas'></canvas>
+                </div>
+
+                <div class="settings-container">
+                    <div class="settings-container-deep">
+                        <p>Вы можете задать настройки: </p>
+                        <select name="selection" id ='algorithm_selection'>
+                          <option value="kmeans">kMeans</option>
+                          <option value="DBSCAN">DBSCAN</option>
+                          <option value="meanShift">meanShift</option>
+                          <option value="all">Три метрики</option>
+                        </select>
+                        <br>
+                        <input type="number" placeholder="Введите количество кластеров(для kMeans)" id="field" min = "2"> 
+                        <br>
+                        <input type="number" placeholder="Введите радиус(для DBSCAN и meanShift)" id="eps" min = "1500"> 
+                        <br>
+                        <input type="number" placeholder="Введите плотность(для DBSCAN)" id="minPts" min = "1">
+                        <br>
+                        <div class = 'inner_3'>
+                          <p>В случае выбора режима "Три метрики":</p>
+                          <p>Левый сектор - kMeans</p>
+                          <p>Центральный сектор - DBSCAN</p>
+                          <p>Правый сектор - meanShift  </p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div>
+              <a href="../astar/Astar.html"><button class="butt">Алгоритм А*</button></a>
+              <a href="../GenAlgorithm/index_gen.html"><button class="butt">Генетический алгоритм</button></a>
+              <a href="../AntSystem/index_ant.html"><button class="butt">Муравьиный алгоритм</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="cluster.js"></script>
+</html>

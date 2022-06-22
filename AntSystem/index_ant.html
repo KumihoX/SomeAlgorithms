@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' media='screen' href='style_ant.css'>
+        <title>Муравьиный алгоритм</title>
+    </head>
+    <div class="content">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="inner_1">
+            <div>
+                <h1>Муравьиный алгоритм</h1>
+            </div>
+            <div>
+                <a href="../main_page.html"><button class="butt">Меню</button></a>
+                <button id="resetAera" class = "butt">Обновить поле</button>
+                <button id="startAnt" class = "butt">Запустить Муравьев</button>
+            </div>
+            <br>
+            <div class="inner_2">
+                <div class="canvas-container">
+                    <canvas id ='canvas'></canvas>
+                </div>
+
+                <div class="settings-container">
+                    <div class="settings-container-deep">
+                        <p>Вы можете задать настройки: </p>
+                        <input type="number" placeholder="Колличество иттераций" id="inp_1"> 
+                        <br>
+                        <input type="number" placeholder="Колличество муравьев" id="inp_2"> 
+                        <br>
+                        <input type="number" placeholder="Коэффициент альфа" id="inp_3">
+                        <br>
+                        <input type="number" placeholder="Коэффициент бетта" id="inp_4">
+                        <br>
+                        <input type="number" placeholder="Колличество добавочного феромона" id="inp_5">
+                        <br>
+                        <input type="number" placeholder="Параметр для завершения алгоритма" id="inp_6">
+                        <br>
+                        <input type="number" placeholder="Процент испарения" id="inp_7">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="../astar/Astar.html"><button class="butt">Алгоритм А*</button></a>
+                <a href="../cluster/cluster_page.html"><button class="butt">Алгоритм кластеризации</button></a>
+                <a href="../GenAlgorithm/index_gen.html"><button class="butt">Генетический алгоритм</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main_ant.js"></script>
+</html>
